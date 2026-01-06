@@ -1,0 +1,40 @@
+/* imran updated */
+.sidebar {
+
+    background: #fff;
+    
+}
+.sidebar .nav .nav-item .nav-link .icon-bg .menu-icon {
+    color: #0095FF;
+}
+
+.navbar .navbar-menu-wrapper {
+    transition: width 0.25s ease;
+    -webkit-transition: width 0.25s ease;
+    -moz-transition: width 0.25s ease;
+    -ms-transition: width 0.25s ease;
+    color: #111111;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: calc(100% - 258px);
+    height: 64px;
+     background: #F9FBFD; 
+}
+
+
+.bg-transparent {
+    background-color: #fff !important;
+}
+
+a.more-read:hover {
+    text-decoration: none;
+}
+
+.content-wrapper {
+    background: #F9FBFD;
+    padding: 2.875rem 2.875rem 0 2.875rem;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}

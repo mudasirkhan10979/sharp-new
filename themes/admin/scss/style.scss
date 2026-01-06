@@ -1,0 +1,114 @@
+/*-------------------------------------------------------------------
+  ===== Table of Contents =====
+
+  * Bootstrap functions
+  * Template variables
+  * SCSS Compass Functions
+  * Boostrap Main SCSS
+  * Template mixins
+    + Animation Mixins
+    + Background Mixins
+    + Badge Mixins
+    + Button Mixins
+    + Miscellaneous Mixins
+    + BlockQuote Mixins
+    + Cards Mixins
+    + Color Functions Mixins
+  * Core Styles
+    + Reset Styles
+    + Fonts
+    + Functions
+    + Backgrounds
+    + Typography
+    + Miscellaneous
+    + Footer
+    + Layouts
+    + Utilities
+    + Demo styles
+  * Components
+    + Accordions
+    + Buttons
+  * Landing screens
+    + Auth
+    + Lock Screen
+-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------*/
+/* === Import Bootstrap functions and variables === */
+@import "../../node_modules/bootstrap/scss/functions.css";
+@import "../../node_modules/bootstrap/scss/variables.css";
+
+/*-------------------------------------------------------------------*/
+/* === Import template variables === */
+@import 'variables.css';
+
+/*-------------------------------------------------------------------*/
+/* === SCSS Compass Functions === */
+@import "../../node_modules/compass-mixins/lib/compass.css";
+@import "../../node_modules/compass-mixins/lib/animate.css";
+
+/*-------------------------------------------------------------------*/
+/* === Boostrap Main SCSS === */
+@import "../../node_modules/bootstrap/scss/bootstrap.css";
+
+/*-------------------------------------------------------------------*/
+/* === Template mixins === */
+@import "mixins/_misc.css";
+@import "mixins/animation.css";
+@import "mixins/background.css";
+@import "mixins/badges.css";
+@import "mixins/blockqoute.css";
+@import "mixins/buttons.css";
+@import "mixins/breadcrumbs.css";
+@import "mixins/cards.css";
+
+/*-------------------------------------------------------------------*/
+/* === Core Styles === */
+@import "reset.css";
+@import "fonts.css";
+@import "functions.css";
+@import "background.css";
+@import "typography.css";
+@import "misc.css";
+@import "footer.css";
+@import "utilities.css";
+@import "demo.css";
+
+/*-------------------------------------------------------------------*/
+/* === Components === */
+@import "components/badges.css";
+@import "components/bootstrap-progress.css";
+@import "components/buttons.css";
+@import "components/breadcrumbs.css";
+@import "components/cards.css";
+@import "components/checkbox-radio.css";
+@import "components/tables.css";
+@import "components/preview.css";
+
+/*-------------------------------------------------------------------*/
+
+
+@import "components/plugin-overrides/select2.css";
+@import "components/plugin-overrides/typeahead.css";
+
+/*-------------------------------------------------------------------*/
+
+
+@import "components/dropdown.css";
+@import "components/forms.css";
+@import "components/icons.css";
+@import "components/lists.css";
+@import "components/tabs.css";
+
+/*-------------------------------------------------------------------*/
+/* === Landing screens === */
+@import "auth.css";
+@import "lock-screen.css";
+
+@import 'navbar.css';
+@import 'sidebar.css';
+@import 'layouts.css';
+@import 'vertical-wrapper.css';
+
+/* === Custom css === */
+@import "dashboard.css";

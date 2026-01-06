@@ -1,0 +1,365 @@
+.rightcontent {
+    margin-left: 230px;
+}
+
+body.logged-out .rightcontent {
+    margin-left: 0;
+}
+
+nav.sidebarleft {
+    width: 250px;
+}
+
+.nav-item:hover .nav-link {
+    transform: none !important;
+    transition: transform 0.3s ease;
+}
+
+.menuinner .nav-link.active {
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+}
+
+i.fa.fa-th-large.menuIcon {
+    margin-right: -4px;
+}
+
+.nav-link span.icon-bg {
+    font-size: 14px;
+    line-height: 1.3em;
+    color: rgba(240, 246, 252, .6);
+    text-transform: capitalize;
+}
+
+.nav-link span.icon-bg_drop {
+    font-size: 14px;
+    line-height: 1.3em;
+    color: rgba(240, 246, 252, .6);
+    text-transform: capitalize;
+}
+
+.nav i.fa.menuIcon {
+    color: rgba(240, 246, 252, .6);
+    font-size: 14px;
+}
+
+.menuinner .nav-link.active i.fa-th-large:before {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.menuinner .nav-item .nav-link.active span {
+    position: relative;
+    left: 36px;
+    margin-left: 0 !important;
+}
+
+.menuinner li:nth-child(4) .nav-link.active span {
+    left: 12px;
+}
+
+.menuinner .nav-link.active i.fa.fa-th-large.menuIcon:before {
+    left: 0px;
+    top: 2px;
+}
+
+.menuinner .nav-link.active i.fa.fa-th-large.menuIcon {
+    margin-right: 8px;
+}
+
+.menuinner ul.nav li.nav-item {
+    line-height: 1;
+    padding: 10px 0 10px 0 !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    text-align: left;
+    width: 100%;
+}
+
+.nav-item:hover span {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav .nav-item:hover i.fa.menuIcon {
+    color: #fff;
+}
+
+.nav-link i:before {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    font-size: 14px;
+}
+
+.nav .nav-link span.icon-bg {
+    margin-left: 25px;
+}
+
+.nav .nav-link span.icon-bg_drop {
+    margin-left: 25px;
+}
+
+.nav-link.active span.icon-bg {
+    color: #fff;
+}
+
+.nav-link.active span.icon-bg i {
+    color: #fff;
+}
+
+.nav-link.active span.icon-bg_drop {
+    color: #fff;
+}
+
+.nav-link.active span.icon-bg_drop i {
+    color: #fff;
+}
+
+.nav-link.active i {
+    color: #fff !important;
+}
+
+span.icon-bg_drop:after {
+    display: none;
+}
+
+span.icon-bg:after {
+    content: '';
+    position: absolute;
+    background: url(../images/wp_arrow.svg);
+    width: 10px;
+    height: 10px;
+}
+
+.nav-link span.icon-bg:after {
+    content: '';
+    position: absolute;
+    background: url(../images/wp_arrow.svg);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    top: 12px;
+    right: 12px;
+    filter: brightness(0) invert(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menuinner li:nth-child(4) .nav-link.active span.icon-bg:after {
+    transform: rotate(90deg);
+    top: 2px;
+    right: 24px;
+}
+
+.menuinner li .nav-link.active span.icon-bg:after {
+    transform: rotate(90deg);
+    top: 2px;
+    right: 50px;
+}
+
+.nav .nav-item {
+    position: relative;
+}
+
+.nav .menuright {
+    position: relative;
+    top: 0 !important;
+    left: 0;
+    background-color: transparent !important;
+    border: none !important;
+    z-index: 1000;
+    padding: 10px 0 0 40px;
+    box-shadow: none !important;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    display: none;
+}
+
+.nav .menuright ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav .menuright li {
+    padding: 10px 20px;
+}
+
+.nav .menuright li:hover {
+    background-color: #f0f0f0;
+}
+
+.nav .nav-link {
+    cursor: pointer;
+}
+
+.menuright ul li {
+    padding: 0 0 10px 0 !important;
+}
+
+.menuright ul li:last-child {
+    padding-bottom: 0 !important;
+}
+
+.menuright a {
+    color: rgba(240, 246, 252, .6) !important;
+    padding: 0 !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    line-height: 1.2em !important;
+}
+
+.menuright a:hover {
+    color: #fff !important;
+}
+
+.menuright a i {
+    margin-right: 8px;
+    display: none;
+}
+
+.menuright a:hover i {
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav .menuright li {
+    background-color: transparent;
+    border: none !important;
+}
+
+.nav .menuright li:hover {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.nav-link span.icon-bg.nodropdown:after {
+    display: none;
+}
+
+.menuinner li .nav-link.active span.icon-bg.nodropdown:after {
+    display: none;
+}
+
+path#_Icon_settings {
+    display: none;
+}
+
+.menuright li a svg {
+    display: none;
+}
+
+i.fa.fa-sign-out.fa-lg {
+    display: none;
+}
+
+.new_menu_active a {
+    color: rgb(240 246 252) !important;
+}
+.nav-link.active i.fa.fa-cubes.menuIcon:before {
+    top: 1px;
+    left: -25px;
+}
+nav.sidebarleft {
+    background: linear-gradient(to top, #000000 0%, #000000 25%, #000000 100%) !important;
+}
+.navbar .navbar-menu-wrapper {
+    background: linear-gradient(to left, #000000 0%, #000000 25%, #000000 100%) !important;
+}
+.sec-head {
+    background: linear-gradient(to left, #000000 0%, #000000 25%, #000000 100%) !important;
+}
+.sec-head-btns a {
+    background: #000000 !important;
+    border-radius: 100px;
+}
+.dataTables_wrapper thead th {
+    background: #000000;
+}
+.stdfilters input, .stdfilters select {
+    padding: 6px 10px;
+    border-radius: 100px;
+}
+.dataTables_wrapper .dataTables_filter input {
+    border-radius: 100px;
+}
+.dataTables_wrapper thead .stdfilters th {
+    background: rgb(119 49 143 / 20%);
+}
+body .dataTables_wrapper tbody tr:nth-child(even) {
+    background: #F5EFE8;
+}
+body .table-striped>tbody>tr:nth-of-type(odd) {
+    background: rgb(119 49 143 / 5%);
+}
+.panel-body button {
+    background: #000000 !important;
+    border-radius: 100px;
+    padding: 5px 15px;
+}
+.contentLogin .panel-body .form-group input {
+    border: 1px solid #000 !important;
+    border-radius: 100px !important;
+}
+.contentLogin .panel-body .form-group .fa {
+    color: #000000;
+    font-size: 20px;
+}
+.contentLogin .panel-body .form-group label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.contentLogin .panel-default .panel-heading {
+    padding: 10px 0 20px 0 !important;
+}
+.contentLogin .panel-title {
+    margin: 0 !important;
+    font-weight: 400;
+    font-size: 16px !important;
+    text-transform: capitalize;
+}
+.panel-body button:hover {
+    background: #000 !important;
+}
+.contentLogin .panel-body {
+    border-radius: 0 0 10px 10px;
+}
+.content-wrapper {
+    background: #000000;
+}
+.contentLogin .input-group .form-control {
+    color: #000 !important;
+}
+.nav-tabs {
+    background: linear-gradient(to left, #000000 0%, #000000 25%, #000000 100%) !important;
+}
+div.dt-buttons .dt-button {
+    background: #000000 !important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #000000;
+	background: #000000;
+    border-color: #000000;
+}
+.btn-primary:not(.btn-light):focus, .btn-primary:not(.btn-light):active{
+	color: #fff;
+    background-color: #000000;
+	background: #000000;
+    border-color: #000000;
+}

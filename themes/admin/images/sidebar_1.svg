@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="Group_389" data-name="Group 389" transform="translate(-65 -99)">
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(65 99)" fill="none" stroke="#a9acb7" stroke-width="1">
+      <rect width="7" height="7" rx="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="6" height="6" rx="0.5" fill="none"/>
+    </g>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(73 99)" fill="none" stroke="#a9acb7" stroke-width="1">
+      <rect width="7" height="7" rx="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="6" height="6" rx="0.5" fill="none"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(65 107)" fill="none" stroke="#a9acb7" stroke-width="1">
+      <rect width="7" height="7" rx="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="6" height="6" rx="0.5" fill="none"/>
+    </g>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(73 107)" fill="none" stroke="#a9acb7" stroke-width="1">
+      <rect width="7" height="7" rx="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="6" height="6" rx="0.5" fill="none"/>
+    </g>
+  </g>
+</svg>
