@@ -278,12 +278,12 @@ class ControllerProduct extends Controller
 		// 	$data['featured'] = false;
 		// }
 		// In product form data load
-		if (isset($this->request->post['product_tags'])) {
-			$data['product_tags'] = implode(',', $this->request->post['product_tags']); // convert array to string
+		if (isset($this->request->post['product_serial_number'])) {
+			$data['product_serial_number'] = $this->request->post['product_serial_number']; // convert array to string
 		} elseif (!empty($product_info)) {
-			$data['product_tags'] = $product_info['product_tags'];
+			$data['product_serial_number'] = $product_info['product_serial_number'];
 		} else {
-			$data['product_tags'] = '';
+			$data['product_serial_number'] = '';
 		}
 
 		if (isset($this->request->post['category_id'])) {
@@ -610,6 +610,7 @@ class ControllerProduct extends Controller
 			$data['products'][] = array(
 				'product_id'     => $result['product_id'],
 				'name'		 	=> $result['name'],
+				'product_serial_number'   => isset($result['product_serial_number']) ? $result['product_serial_number'] : '',
 				'category_name'	=> $result['category_name'],
 				'status' 		=> $result['publish'],
 				'featured' 		=> $result['featured'],

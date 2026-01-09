@@ -25,6 +25,7 @@
                                 <thead>
                                     <tr>
                                         <th class="text-left">Title</th>
+                                        <th class="text-left">Product Serial Number</th>
                                         <th class="text-left">Category Name</th>
                                         <th class="text-left">Sort Order</th>
                                         <th class="text-left">Status</th>
@@ -33,6 +34,7 @@
                                     </tr>
                                     <tr class="stdfilters">
                                     <th><input type="text" placeholder="Title"></th>
+                                    <th><input type="text" placeholder="Product Serial Number"></th>
                                     <th><input type="text" placeholder="Category Name"></th>
                                     <th><input type="text" placeholder="Sort Order"></th>
                                     <th id="drop-searc"></th>
@@ -46,6 +48,9 @@
                                     <tr>
                                         <td class="text-left">
                                             <?php echo $product['name']; ?>
+                                        </td>
+                                        <td class="text-left">
+                                            <?php echo $product['product_serial_number']; ?>
                                         </td>
                                         <td class="text-left">
                                             <?php echo $product['category_name']; ?>
@@ -129,7 +134,7 @@
         fixedHeader: true,
         buttons: false,
         "columnDefs": [
-            { "orderable": false, "targets": [3, 4, 5] } // Disable sorting for Status, Featured, and Actions columns
+            { "orderable": false, "targets": [4, 5, 6] }
         ],
         scrollX: true,
         initComplete: function () {
@@ -139,8 +144,7 @@
                 var column = this;
                 var cell = $('.stdfilters th').eq($(api.column(colIdx).header()).index());
                 
-                // Special handling for Status column (index 3)
-                if (colIdx === 3) {
+                if (colIdx === 4) {
                     var select = $('<select><option value="">Status</option><option value="Active">Active</option><option value="Inactive">Inactive</option></select>')
                         .appendTo($('#drop-searc').empty())
                         .on('change', function() {
@@ -148,8 +152,7 @@
                             column.search(val, true, false).draw(true);
                         });
                 } 
-                // Special handling for Featured column (index 4)
-                else if (colIdx === 4) {
+                else if (colIdx === 5) {
                     var select = $('<select><option value="">All</option><option value="Featured">Featured</option><option value="Unfeatured">Unfeatured</option></select>')
                         .appendTo($('#drop-fsearc').empty())
                         .on('change', function() {
@@ -164,8 +167,7 @@
                             }
                         });
                 }
-                // Skip filter for Action column (index 5)
-                else if (colIdx !== 5) {
+                else if (colIdx !== 6) {
                     $('input', $('.stdfilters th').eq($(api.column(colIdx).header()).index()))
                         .off('keyup change')
                         .on('keyup change', function (e) {
@@ -209,7 +211,7 @@
                     // Update the DataTable row data
                     var row = $('#sharp-table').DataTable().row(checkbox.closest('tr'));
                     var rowData = row.data();
-                    rowData[3] = '<div class="custom-control custom-switch"><input type="checkbox" class="custom-control-input status-toggle" id="statusToggle' + productId + '" ' + (newStatus ? 'checked' : '') + ' data-status-id="' + productId + '"> <label class="custom-control-label" for="statusToggle' + productId + '">' + newStatusText + '</label> </div>';
+                    rowData[4] = '<div class="custom-control custom-switch"><input type="checkbox" class="custom-control-input status-toggle" id="statusToggle' + productId + '" ' + (newStatus ? 'checked' : '') + ' data-status-id="' + productId + '"> <label class="custom-control-label" for="statusToggle' + productId + '">' + newStatusText + '</label> </div>';
                     row.data(rowData).draw(false);
                 } else {
                     // Revert the checkbox state if update failed
@@ -254,7 +256,7 @@
                     // Update the DataTable row data
                     var row = $('#sharp-table').DataTable().row(checkbox.closest('tr'));
                     var rowData = row.data();
-                    rowData[4] = '<div class="custom-control custom-switch"><input type="checkbox" class="custom-control-input featured-toggle" id="featuredToggle' + productId + '" ' + (newFeatured ? 'checked' : '') + ' data-featured-id="' + productId + '"> <label class="custom-control-label" for="featuredToggle' + productId + '">' + newFeaturedText + '</label> </div>';
+                    rowData[5] = '<div class="custom-control custom-switch"><input type="checkbox" class="custom-control-input featured-toggle" id="featuredToggle' + productId + '" ' + (newFeatured ? 'checked' : '') + ' data-featured-id="' + productId + '"> <label class="custom-control-label" for="featuredToggle' + productId + '">' + newFeaturedText + '</label> </div>';
                     row.data(rowData).draw(false);
                 } else {
                     // Revert the checkbox state if update failed

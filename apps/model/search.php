@@ -32,6 +32,7 @@ class ModelSearch extends Model
             AND (
                 pd.name LIKE '%" . $search_term . "%'
                 OR cd.title LIKE '%" . $search_term . "%'
+                OR p.product_serial_number LIKE '%" . $search_term . "%'
                 $category_condition
             )
             ORDER BY p.product_id DESC
@@ -65,6 +66,7 @@ class ModelSearch extends Model
             AND (
                 pd.name LIKE '%" . $search_term . "%'
                 OR cd.title LIKE '%" . $search_term . "%'
+                OR p.product_serial_number LIKE '%" . $search_term . "%'
                 $category_condition
             )";
         $query = $this->db->query($sql);
